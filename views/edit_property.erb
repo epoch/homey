@@ -1,0 +1,15 @@
+<h2>edit property</h2>
+
+<form action="/properties/<%= @property['id'] %>" method="post">
+  <input type="hidden" name="_method" value="put">
+  <label for="">desc</label>
+  <input name="desc" type="text" value="<%= @property['description'] %>">
+
+  <label for="">address</label>
+  <input name="address" value="<%= @property['address'] %>" type="text">
+
+  <label for="">image url</label>
+  <input name="image_url" value="<%= @property['image_url'] %>" type="text">
+
+  <button>submit</button>
+</form>

@@ -1,0 +1,7 @@
+<% @properties.each do |property| %>
+  <p>
+    <a href="/properties/<%= property['id'] %>">
+      <%= property['address'] %>
+    </a>
+  </p>
+<% end %>

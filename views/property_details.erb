@@ -1,0 +1,12 @@
+<h1><%= @property['address'] %></h1>
+
+<p><%= @property['description'] %></p>
+
+<img src="<%= @property['image_url'] %>" alt="">
+
+<form action="/properties/<%= @property['id'] %>" method="post">
+  <input type="hidden" name="_method" value="delete">
+  <button>delete</button>
+</form>
+
+<a href="/properties/<%= @property['id'] %>/edit">edit</a>
